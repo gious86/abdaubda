@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}ტრამპაცუმპა{% endblock %}
+
+{% block body %}
+<img src="/static/rick.jpg" width="250" height="250">
+<h1 id="blink">ტრამპაცუმპა</h1>
+<script type="text/javascript">
+  var blink = document.getElementById('blink');
+  setInterval(function() {
+    blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+  }, 500);
+</script>
+{% endblock %}
